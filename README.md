@@ -7,7 +7,6 @@
 * [HTL 5 Please](https://html5please.com/)
 * [React Code Snippets (VSCode)](https://marketplace.visualstudio.com/items?itemName=xabikos.ReactSnippets)
 * [React Food Truck (VSCode)](https://marketplace.visualstudio.com/items?itemName=burkeholland.react-food-truck)
-
 * [Razzle](https://github.com/jaredpalmer/razzle)
 * [Create React App](https://facebook.github.io/create-react-app/)
 * [Prettier](https://prettier.io/)
@@ -17,3 +16,4 @@
 * [Babel](https://babeljs.io/)
 * [ESLint](https://eslint.org/)
 * [TypeScript](http://www.typescriptlang.org/)
+* [React Router Dom](https://reacttraining.com/react-router/web/guides/philosophy)
