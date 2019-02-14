@@ -1,17 +1,14 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { createIncrement } from '../redux/actions';
 
 class Counter extends Component {
-  state = {
-    count: 0
-  };
-
   onClick = () => {
-    const { count } = this.state;
-    this.setState({ count: count + 1 });
+    this.props.increment();
   };
 
   render() {
-    const { count } = this.state;
+    const { count } = this.props;
 
     return (
       <div>
@@ -22,4 +19,18 @@ class Counter extends Component {
   }
 }
 
-export default Counter;
+function mapStateToProps(state) {
+  return {
+    count: state.count
+  };
+}
+
+function mapDispatchToProps(dispatch) {
+  return {
+    increment: () => dispatch(createIncrement())
+  };
+}
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Counter);
