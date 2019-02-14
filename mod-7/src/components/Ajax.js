@@ -1,25 +1,24 @@
 import React, { Component } from 'react';
-import JokesPresentation from './JokesPresentation';
 
-class Jokes extends Component {
+class Ajax extends Component {
   state = {
-    jokes: [],
+    data: [],
     loading: true,
     error: null
   };
 
   async componentDidMount() {
     try {
-      const rsp = await fetch('http://localhost:3001/chuck-norris');
+      const rsp = await fetch(this.props.url);
       if (!rsp.ok) {
         throw rsp;
       }
       if (rsp.headers.get('content-type').startsWith('application/json')) {
-        const jokes = await rsp.json();
-        this.setState({ jokes });
+        const data = await rsp.json();
+        this.setState({ data });
       } else {
-        const jokes = await rsp.text();
-        this.setState({ jokes });
+        const data = await rsp.text();
+        this.setState({ data });
       }
     } catch (error) {
       this.setState({ error });
@@ -28,7 +27,7 @@ class Jokes extends Component {
   }
 
   render() {
-    const { loading, error, jokes } = this.state;
+    const { loading, error, data } = this.state;
 
     if (loading) {
       return <div>Loading...</div>;
@@ -38,8 +37,8 @@ class Jokes extends Component {
       return <div>{error.message}</div>;
     }
 
-    return <JokesPresentation jokes={jokes} />;
+    return this.props.children(data);
   }
 }
 
-export default Jokes;
+export default Ajax;

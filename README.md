@@ -17,3 +17,9 @@
 * [ESLint](https://eslint.org/)
 * [TypeScript](http://www.typescriptlang.org/)
 * [React Router Dom](https://reacttraining.com/react-router/web/guides/philosophy)
+* [Redux](https://redux.js.org/)
+* [MobX](https://mobx.js.org/)
+* [React Bootstrap](https://react-bootstrap.github.io/)
+* [Formik](https://jaredpalmer.com/formik/)
+* [Yup](https://github.com/jquense/yup)
+

@@ -3,7 +3,9 @@ import './App.css';
 import Greeter from './components/Greeter';
 import Counter from './components/Counter';
 import Clock from './components/Clock';
-import Jokes from './components/Jokes';
+// import Jokes from './components/Jokes';
+import JokesPresentation from './components/JokesPresentation';
+import Ajax from './components/Ajax';
 
 class App extends Component {
   render() {
@@ -17,7 +19,10 @@ class App extends Component {
           <Clock />
         </div>
         <hr />
-        <Jokes />
+        {/* <Jokes /> */}
+        <Ajax url="http://localhost:3001/chuck-norris">
+          {jokes => <JokesPresentation jokes={jokes} />}
+        </Ajax>
       </div>
     );
   }
