@@ -1,5 +1,8 @@
+import { log } from './logger';
+
 class Calculator {
   add(x, y) {
+    log('Ik zit in add');
     return x + y;
   }
 
@@ -7,3 +10,5 @@ class Calculator {
     return x - y;
   }
 }
+
+export default Calculator;

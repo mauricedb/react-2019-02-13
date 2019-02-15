@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot 1`] = `0.30000000000000004`;
+
+exports[`snapshot 2`] = `
+Array [
+  Object {
+    "theSum": 0.30000000000000004,
+  },
+]
+`;
