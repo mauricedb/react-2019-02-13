@@ -18,6 +18,7 @@
 * [TypeScript](http://www.typescriptlang.org/)
 * [React Router Dom](https://reacttraining.com/react-router/web/guides/philosophy)
 * [Redux](https://redux.js.org/)
+* [Redux DevTools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en-US)
 * [MobX](https://mobx.js.org/)
 * [React Bootstrap](https://react-bootstrap.github.io/)
 * [Formik](https://jaredpalmer.com/formik/)
