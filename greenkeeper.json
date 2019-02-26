@@ -1,0 +1,20 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "demo-data/package.json",
+        "mod-1/package.json",
+        "mod-2-cra/package.json",
+        "mod-2-ts/package.json",
+        "mod-2/package.json",
+        "mod-3/package.json",
+        "mod-5/package.json",
+        "mod-6/package.json",
+        "mod-7/package.json",
+        "mod-8/package.json",
+        "mod-9-cra/package.json",
+        "mod-9/package.json"
+      ]
+    }
+  }
+}
